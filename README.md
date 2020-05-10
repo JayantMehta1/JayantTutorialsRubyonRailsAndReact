@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I am currently working on developing a platform to host my video tutorials and presentations.
 
-Things you may want to cover:
+It has been great using Ruby on Rails for the backend and React.js for the frontend along with a PostgreSQL database.
 
-* Ruby version
+The deployment link for the project is: https://jayanttutorialsrailsandreact.herokuapp.com/
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
