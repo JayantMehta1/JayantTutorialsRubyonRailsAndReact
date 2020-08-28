@@ -12,15 +12,15 @@ class Table extends Component {
             let handleVideoChange = this.props.handleVideoChange.bind(this, data)
             return (
                 data.active ?
-                <ActiveItem handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description}/> :
-                <Item handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description}/>
+                <ActiveItem handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} url={data.url}/> :
+                <Item handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} url={data.url}/>
             )
         })
         return (
             <div className="pt-5 pb-5">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="pt-4 pb-4">React for Rails Developers - Videos</h2>
+                        <h2 className="pt-4 pb-4">Tutorial Videos</h2>
                     </div>
 
                     {items}

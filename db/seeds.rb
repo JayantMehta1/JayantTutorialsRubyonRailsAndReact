@@ -17,13 +17,11 @@
 #exit()
 #Then re-run the seed so everything is linked to the correct ids meaning course 1 --> section 1 --> episodes
 
-course = Course.create(title: 'Hello World', description: 'Create a new react app with ruby on rails')
+firstCourse = Course.create(title: 'Jayant Tutorials', description: 'Welcome to the Jayant Tutorials course!')
 
-section = Section.create(title: "Chapter 1", course: course )
+firstSectionOfFirstCourse = Section.create(title: "Introduction", course: firstCourse )
 
-episodes = Episode.create([
-    {title: '1. Setting up a new Ruby on Rails App with React.', description: 'lorem ipsum', url: "https://www.youtube.com/embed/B0SxxHAImhc", section: section},
-    {title: '2. Adding React to an Exisiting Rails App.', description: 'lorem ipsum', url: "https://www.youtube.com/embed/B0SxxHAImhc", section: section},
-    {title: '3. Building a Hellow Word App.', description: 'lorem ipsum', url: "https://www.youtube.com/embed/B0SxxHAImhc", section: section},
-    {title: '4. Adding React Router DOM to your App', description: 'lorem ipsum', url: "https://www.youtube.com/embed/B0SxxHAImhc", section: section}
+episodesOfFirstSectionInFirstCourse = Episode.create([
+    {title: '1. Welcome to Jayant Tutorials', description: 'Here is a short introduction from me, please watch it to learn more about these tutorials', url: "https://www.youtube.com/embed/KYdsh_6TfaU", section: firstSectionOfFirstCourse},
+    {title: '2. What are we going to cover?', description: 'Some topics I will be covering soon!', url: "https://www.youtube.com/embed/KYdsh_6TfaU", section: firstSectionOfFirstCourse},
 ])

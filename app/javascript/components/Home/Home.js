@@ -18,7 +18,7 @@ class Home extends Component {
             debugger
             let res = []
             data.data.data.map( (data) => {
-                res.push({id: data.id, title: data.title, description: data.description, active: false})
+                res.push({id: data.id, title: data.title, description: data.description, url: data.url, active: false})
             })
 
             this.setState({course_modules: res})
